@@ -1,0 +1,224 @@
+body {
+  font-family: Roboto, sans-serif;
+  margin: 50px;
+  padding: 10px; 
+  background-color: #1d1d1e;
+}
+
+* {
+  outline: none;
+}
+
+h1 {
+      color: #fff;
+      font-size: 46px;
+      line-height: 50pd;
+      margin-bottom: 40px;
+      font-weight: 900;
+}
+h2 {
+      color: #b38c52; 
+      font-size: 30px;
+      display: table;
+      margin-bottom: 10px;
+      font-weight: 900;
+      text-decoration: none;
+}
+p {
+font-size: 12px;
+line-height: 18px;
+color: #fff;
+width: 90%;
+font-weight: 400;
+margin-bottom: 15px;
+      }
+li {
+font-size: 12px;
+line-height: 18px;
+color: #fff;
+width: 90%;
+font-weight: 400;
+margin-bottom: 15px;
+      }
+.year {
+font-size: 20px;
+text-transform: uppercase;
+color: #b38c52;
+display: block;
+margin-bottom: 10px;
+font-weight: 900;
+      }
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+/* NAVMENU
+–––––––––––––––––––––––––––––––––––––––––––––––––– */  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    display: inline; /* Makes menu items on a horizontal line */
+    margin-right: 20px; /* Space between menu items */
+  }
+  
+/* Style the links inside the navigation bar */
+  nav a {
+    text-decoration: none;
+    color: #b38c52;
+    font-size: 16px;
+    float: center;
+  }
+  /* Change the color of links on hover */
+  nav a:hover {
+    text-decoration: underline;
+    color: black;
+    background-color: #ddd;
+  }
+
+html{
+    font-family: sans-serif;
+    }
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.linetime{
+    position: relative;
+    width: 600px;
+    margin: 0 auto;
+    border: 1px solid #7f9298;
+    border-radius: 10px;
+    }
+.line{
+    display: flex;
+    justify-content: start;
+    border-bottom: 1px solid #7f9298;
+    position: relative;
+    }
+.line .disco{
+    width: 36px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    }
+.line .disco:after{
+    content:'';
+    position: absolute;
+    top: 0;
+    left: calc(505 - 2px);
+    height: 100%;
+    width: 3px;
+    background: #fff;
+    z-index: -1;
+    }
+.line:first-child .disco:after{
+    height: 50%;
+    top: 50%;
+    }
+.lineila:last-child .disco:after{
+    height: 50%;
+    }
+.line .disco > div{
+    width: 50%;
+    aspect-ratio: 1/1;
+    border-radius: 50%;
+    background: #fff;
+    box-sizing: border-box;
+    }
+.line:hover .disco > div{
+    border: 3px #b38c52;
+    background: red;
+    }
+.line div:nth-of-type(2){
+    width: 20%;
+    padding: 4px;
+    display: flex;
+    align-items:center;
+    }
+.line div:nth-of-type(3){
+    width: 60%;
+    padding: 4px;
+    }
+@media screen and(max-width: 767px) {
+  li.linetime img 
+}
+    display none
+
+.contenedor{ 
+  display: flex; 
+  justify-content:center; 
+  flex-wrap:wrap; 
+  gap: 40px;
+  } 
+  .tarjeta{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  width: 320px;
+  border: 1px solid lightgray;
+  box-shadow: 1px 1px 4px 2px #d3d3d3d1;
+  border-radius:15px;
+  font-family: sans-serif;
+    
+  }
+  .titulo{
+  font-size: 24px;
+  padding: 10px 10px 0 10px;
+  text-align: center;
+
+  }
+  .body {
+  padding: 10px;
+  flex: 1 1 100%;
+  }
+  
+  /* CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– */
+  .image-container {
+    position: relative;
+    max-width: 100%;
+    padding-top: 40px;
+  }
+  .img-card {
+    height: auto;
+    clip-path: circle(50%);
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .img-normalizada {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    object-position: middle;
+  }
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: bottom;
+  }
+  
+  .img-div-center{
+    height: 300px;
+    position: relative;
+  }
+  .img-centro-vert-hor{
+    width: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }

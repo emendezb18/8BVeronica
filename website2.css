@@ -1,0 +1,23 @@
+body{
+    background-color: rgb(0, 0, 0);
+    color: burlywood
+    
+}
+.link{
+    margin-right: 5%;
+    margin-left: 5%
+}
+text
+
+    p { font-size: 30px;
+    }
+
+    header{ background-image: url("sovietparade.png");
+padding: 100px;
+color: rgb(0, 0, 0);
+}
+
+p{
+    font: small-caps 100%/100% serif;
+    color: rgb(247, 194, 232);
+}
